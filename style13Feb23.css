@@ -1,0 +1,52 @@
+/* MEDIA QUERIES- Allows us to work with responsive design and style elements on different screem sizes.
+
+min width: ----starting from
+max-width:--- up to
+
+ */
+
+
+ body{
+ background:yellowgreen ;
+ }
+
+ .banner {
+  background: blueviolet;
+ }
+
+ h1{
+  color: white;
+  text-align:center; 
+  text-decoration:underline;
+text-transform:capitalize ;
+ }
+ @media screen and (max-width: 576px) {
+  
+   body{
+    background: red;
+   }
+   .banner{
+    background: yellowgreen;
+    border-radius: 20px;
+   }
+   h1{
+    color: black;
+    font-size: 60px;
+   }
+ }
+/* max width can be overriden ie the style shown will be down below */
+/* there are some properties that will not be overriden for example border radius will reflect in the code below */
+ @media screen and (max-width: 768px) {
+  
+   body{
+    background: orangered;
+   }
+   .banner{
+    background: pink;
+   }
+   h1{
+    color: green;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+ }
